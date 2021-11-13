@@ -1,0 +1,36 @@
+$default-bg: #fcd7b6;
+$main-bg: #edf1f4;
+$accent-bg: #a3bbc8;
+
+$title:#243f4d;
+$text: #436372;
+
+%rubik-400{
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500{
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-700{
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%dms-400{
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dms-500{
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dms-700{
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}

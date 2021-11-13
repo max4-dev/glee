@@ -1,3 +1,12 @@
 body{
-  
+  @extend %rubic-400;
+  font-size: 18px;
+  line-height: 30px;
+  color: $title;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 15px;
+  margin: 0 auto;
 }

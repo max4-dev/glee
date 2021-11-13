@@ -3,7 +3,80 @@
 @import 'reset';
 @import 'global';
 
+.header{
+  padding: 45px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+.menu__list{
+  display: flex;
+  &-item + .menu__list-item{
+    margin-left: 35px;
+  }
+  &-link{
+    color: $text;
+    @extend %rubik-500;
+    font-size: 15px;
+    line-height: 12px; 
+  }
+}
 
+.user-nav{
+  display: flex;
+  &__link{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .search{
+    background-color: $main-bg;
+  }
+  .menu-btn{
+    background-color: $accent-bg;
+  }
+  &__link-box{
+    display: flex;
+    align-items: center;
+    margin: 0 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: $default-bg;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      height: 32px;
+      width: 1px;
+      background-color: rgba(255, 255, 255, 0.7);
+      right: 50%;
+    }
+  }
+  &__link-store{
+    padding: 5px 20px;
+    position: relative;
+  }
+  &__num{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 16px;
+    top: -3px;
+    right: 10px;
+    font-size: 10px;
+    @extend %dms-400;
+    font-weight: 400;
+    color: $title;
+  }
+}
 
 @import 'media';
