@@ -234,6 +234,9 @@
     margin-bottom: 12px;
     line-height: 21px;
   }
+  &-top__form{
+    display: flex;
+  }
   &-top__text{
     @extend %rubik-400;
     font-weight: 400;
