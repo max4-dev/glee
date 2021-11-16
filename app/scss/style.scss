@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -79,6 +80,115 @@
   }
 }
 
+.top-slider{
+  background-image: url('../images/top-slider-bg.jpg');
+  background-color: $default-bg;
+      background-position: 58% 90%;
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 500px;
+    padding: 200px 0;
+  }
+  &__title{
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 30px;
+    @extend %rubik-500;
+    font-weight: 500;
+  }
+  &__text{
+    margin-bottom: 35px;
+    width: 370px;
+  }
+  &__btn{
+    @extend %btn;
+  }
+  &__img{
+    align-self: center;
+  }
+  .slick-dots{
+    display: flex;
+    padding-bottom: 45px;
+    justify-content: center;
+    li{
+      opacity: .3;
+      transition: all .3s;
+      & + li{
+        margin-left: 11px;
+      }
+      button{
+        border: none;
+        padding: 0;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        background-color: #fff;
+        text-align: center;
+        line-height: 29px;
+        @extend %rubik-500;
+        font-size: 11px;
+        color: $title;
+      }
+    }
+    .slick-active{
+      opacity: 1;
+    }
+  }
+}
+
+.benefits{
+  background-color: $default-accent-bg;
+  padding: 55px 0 45px;
+  display: flex;
+  justify-content: space-around;
+  &__item{
+    padding-left: 80px;
+    position: relative;
+  }
+  &__item-support::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/icons/support-icon.svg');
+    width: 51px;
+    height: 53px;
+    left: 0;
+    top: 10px;
+  }
+  &__item-delivery::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/icons/delivery-icon.svg');
+    width: 54px;
+    height: 36px;
+    left: 0;
+    top: 10px;
+  }
+  &__item-pay::before{
+    position: absolute;
+    content: "";
+    background-image: url('../images/icons/pay-icon.svg');
+    width: 54px;
+    height: 52px;
+    left: 0;
+    top: 10px;
+  }
+  &__title{
+    @extend %dms-700;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: $brown-title;
+  }
+  &__text{
+    width: 240px;
+    @extend %dms-400;
+    font-weight: 400;
+    color: $brown-text;
+  }
+}
+
 .footer{
   &-top{
     padding: 80px 0 68px;
@@ -137,6 +247,7 @@
     background-color: $default-accent-bg;
     &::placeholder{
       font-size: 12px;
+      @extend %dms-400;
     }
   }
   &-top__button{
