@@ -1,8 +1,19 @@
+html,
+body{
+  height: 100%;
+}
+
 body{
   @extend %rubik-400;
   font-size: 18px;
   line-height: 30px;
   color: $title;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  flex-grow: 1;
 }
 
 .container{
