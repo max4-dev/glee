@@ -64,4 +64,12 @@ $brown-text: #585858;
 %img-bg{
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
