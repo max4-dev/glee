@@ -206,6 +206,7 @@
     border: none;
     background-color: transparent;
     padding: 0;
+    cursor: pointer;
   }
   &__nav-item + .products__nav-item{
     margin-left: 30px;
@@ -262,12 +263,13 @@
     }
   }
   &__img{
-    margin: 0 auto 60px;
+    margin: 0 auto;
   }
   &__img-box{
     max-width: 270px;
     width: 100%;
-    min-height: 200px;
+    height: 200px;
+    margin-bottom: 60px;
   }
   &__content-title{
     @extend %dms-500;
@@ -417,9 +419,8 @@
     }
   }
   &__items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: -217px;
   }
   &__img-box{
@@ -431,7 +432,7 @@
     padding: 0 30px 25px;
     position: relative;
   }
-  &__new{
+  &__status{
     padding: 5px 30px;
     background-color: $accent-bg;
     @extend %poppins-700;
@@ -457,9 +458,9 @@
     font-size: 13px;
     line-height: 30px;
     color: #222933;
-    p + p{
-      margin-left: 30px;
-    }
+  }
+  &__info-link + .articles-top__info-link{
+    margin-left: 30px;
   }
 }
 
@@ -468,6 +469,8 @@
   min-height: 420px;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   border-radius: 5px;
+  max-width: 370px;
+  width: 100%;
 }
 
 .articles-bottom{
