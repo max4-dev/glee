@@ -584,4 +584,297 @@
   }
 }
 
+.modal{
+  padding: 110px 0 120px;
+  &__form{
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__label{
+    font-size: 14px;
+    line-height: 36px;
+    color: $text;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    height: 55px;
+    border: 2px solid #f6f6f6;
+    margin-bottom: 35px;
+    padding: 0 15px;
+  }
+  &__btn{
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    background-color: $accent-bg;
+    color: #fff;
+    @extend %rubik-500;
+    line-height: 30px;
+  }
+  &__error{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__variable{
+    text-align: center;
+    padding-top: 30px;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 24px;
+    color: $title;
+    margin-bottom: 20px;
+  }
+  &__link{
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: 2px solid $accent-bg;
+    line-height: 30px;
+    color: $title;
+    @extend %rubik-500;
+    padding: 20px 0;
+  }
+}
+
+.partners-section{
+  background-color: $default-accent-bg;
+  padding: 40px 0;
+}
+
+.achievements{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__img{
+    object-fit: contain;
+  }
+  &__content{
+    max-width: 560px;
+    width: 100%;
+    padding: 100px 0;
+  }
+  &__years{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+  }
+  &__yearsnum{
+    font-size: 140px;
+    line-height: 32px;
+    color: $accent-bg;
+    margin-right: 35px;
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: -9px;
+  }
+  &__yearstext-box{
+    margin-top: 38px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__title{
+    margin-bottom: 45px;
+    @extend %dms-700;
+    font-size: 36px;
+    line-height: 32px;
+  }
+  &__text{
+    font-size: 16px;
+    margin-bottom: 65px;
+  }
+}
+
+.achievements__benefits{
+  padding-top: 30px;
+  border-top: 2px solid #e6eaf0;
+  display: flex;
+  justify-content: space-between;
+  &-item{
+    padding-left: 55px;
+    border-right: 1px solid #e6eaf0;
+    padding: 10px 35px 15px 55px;
+    position: relative;
+    &:last-child{
+      border-right: none;
+    }
+  }
+  &-item__projects::before,
+  &-item__revenue::before,
+  &-item__awards::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 21px;
+  }
+  &-item__projects::before{
+    background-image: url('../images/icons/project-icon.svg');
+    width: 36px;
+    height: 38px;
+  }
+  &-item__revenue::before{
+    background-image: url('../images/icons/revenue-icon.svg');
+    width: 43px;
+    height: 39px;
+  }
+  &-item__awards::before{
+    background-image: url('../images/icons/awards-icon.svg');
+    width: 42px;
+    height: 40px;
+  }
+  &-item__title{
+    font-size: 36px;
+    line-height: 38px;
+    @extend %dms-700;
+    margin-bottom: 5px;
+  }
+  &-item__text{
+    font-size: 16px;
+    line-height: 17px;
+    @extend %dms-700;
+    color: #4c4c4c;
+  }
+}
+
+.benefits-info{
+  background-color: $default-bg;
+  padding: 85px 0 80px;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item{
+    text-align: center;
+  }
+  &__img-box{
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__img{
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dms-700;
+    margin-bottom: 10px;
+  }
+  &__text{
+    @extend %dms-700;
+    line-height: 32px;
+  }
+}
+
+.team{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 305px;
+  }
+  &__title{
+    font-size: 36px;
+    line-height: 32px;
+    @extend %dms-700;
+    margin-bottom: 35px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__btn{
+    @extend %btn;
+    padding: 18px 65px 18px 18px;
+    font-size: 15px;
+    border-radius: 5px;
+    &::after{
+      top: 22px;
+    }
+  }
+  &__items{
+    max-width: 770px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+  }
+  &__item{
+    position: relative;
+  }
+  &__item-imgbox{
+    max-width: 370px;
+    width: 100%;
+    height: 320px;
+  }
+  &__item-info{
+    background-color: #fff;
+    width: 325px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    margin-top: -30px; 
+    display: inline-block;
+    position: absolute;
+    bottom: -72px;
+    left: 0;
+  }
+  &__item-box{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+  &__info{
+    max-width: 180px;
+    padding-right: 10px;
+  }
+  &__name{
+    font-size: 22px;
+    line-height: 26px;
+    @extend %dms-700;
+    margin-bottom: 10px;
+  }
+  &__position{
+    color: #565872;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  &__social{
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    position: relative;
+    img{
+      position: absolute;
+      top: 12px;
+      left: 12px;
+    }
+  }
+  &__link + .team__link{
+    margin-left: 7px;
+  }
+  &__link-google{
+    img{
+      top: 13px;
+    }
+  }
+}
+
 @import 'media';
