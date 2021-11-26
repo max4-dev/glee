@@ -67,6 +67,14 @@ $brown-text: #585858;
   background-position: center center;
 }
 
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0)
+}
+
 @function max($numbers...) {
   @return m#{a}x(#{$numbers});
 }
