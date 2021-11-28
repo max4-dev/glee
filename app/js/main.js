@@ -1,5 +1,25 @@
 $(function () {
 
+  $('.product-one__input').styler();
+
+  $('.slide-thumb').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    vertical: true,
+    draggable: false,
+    focusOnSelect: true,
+    asNavFor: '.slide-big'
+  });
+  $('.slide-big').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    draggable: false,
+    asNavFor: '.slide-thumb'
+  });
+
   $(".filter-price__input").ionRangeSlider({
     type: "double",
     onStart: function (data) {
