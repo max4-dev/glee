@@ -1,0 +1,62 @@
+.product-banners {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__item {
+    background-color: $default-accent-bg;
+    min-height: 390px;
+    max-width: 860px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 130px;
+  }
+
+  &__img {
+    margin-top: -170px;
+  }
+
+  &__content {
+    margin-left: 50px;
+    padding-right: 90px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    @extend %dms-700;
+    color: $title;
+    margin-bottom: 25px;
+    max-width: 260px;
+  }
+
+  &__text {
+    width: 380px;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: $text;
+    background-color: transparent;
+    padding: 20px 100px 20px 25px;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 9px;
+      right: 15px;
+      top: 23px;
+      background-image: url('../images/green-arrow.png');
+    }
+  }
+}

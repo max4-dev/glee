@@ -1,5 +1,15 @@
 $(function () {
 
+  $('.footer-top__title-dropbown').on('click', function () {
+    $(this).next('.footer-top__list').slideToggle();
+    $(this).toggleClass('footer-top__title-dropbown--active')
+  });
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__btn').toggleClass('menu__btn--active');
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
   $('.relates__inner').slick({
     slidesToShow: "4",
     slidesToScroll: 1,
