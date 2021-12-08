@@ -36,3 +36,45 @@
     @extend %dms-700;
   }
 }
+
+@media (max-width: 930px) {
+  .product-new{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .product-new {
+    padding: 80px 0;
+    &__items {
+      display: block;
+      padding: 0 100px;
+    }
+    &__item{
+      display: block;
+      max-width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .product-new{
+    &__items{
+      padding: 0 40px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .product-new {
+    &__items {
+      padding: 0;
+    }
+  }
+  .products__nav-list{
+    margin-bottom: 40px;
+  }
+}

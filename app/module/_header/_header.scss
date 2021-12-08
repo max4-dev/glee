@@ -91,7 +91,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1205px) {
   .menu{
     margin: 0;
   }
@@ -104,15 +104,16 @@
   .menu{
     position: absolute;
     display: block;
-    top: 165px;
-    width: 100%;
-    padding: 15px 0;
+    top: 125px;
+    width: 98%;
+    z-index: 6;
     &__list{
       transition: all .5s;
       transform: translateX(-200%);
       text-align: center;
       display: block;
       background-color: #fff;
+      padding: 15px 0;
       &-link{
         display: block;
         padding: 10px 0;
@@ -184,6 +185,18 @@
   }
 }
 
+@media (max-width: 880px) {
+  .menu {
+    width: 97%;
+  }
+}
+
+@media (max-width: 740px) {
+  .menu{
+    width: 96%;
+  }
+}
+
 @media (max-width: 595px) {
   .user-nav{
     width: 100%;
@@ -193,11 +206,17 @@
   .menu__btn{
     order: 0;
   }
+  .menu{
+    top: 185px;
+  }
 }
 
 @media (max-width: 400px){
   .user-nav{
     justify-content: space-between; 
+  }
+  .menu{
+    width: 94%;
   }
 }
 

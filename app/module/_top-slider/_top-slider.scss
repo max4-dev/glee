@@ -2,7 +2,6 @@
   background-image: url('../images/top-slider-bg.jpg');
   background-color: $default-bg;
   background-position: 58% 90%;
-
   &__item {
     display: flex !important;
     justify-content: space-between;
@@ -23,7 +22,7 @@
 
   &__text {
     margin-bottom: 35px;
-    width: 370px;
+    max-width: 370px;
   }
 
   &__btn {
@@ -73,10 +72,11 @@
   padding: 55px 0 45px;
   display: flex;
   justify-content: space-around;
-
+  flex-wrap: wrap;
   &__item {
     padding-left: 80px;
     position: relative;
+    margin: 10px;
   }
 
   &__item-support::before {
@@ -121,5 +121,45 @@
     @extend %dms-400;
     font-weight: 400;
     color: $brown-text;
+  }
+}
+
+@media (max-width:1150px) {
+  .top-slider{
+    &__img{
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width:930px) {
+  .top-slider {
+    &__item{
+      .top-slider__img {
+        display: none;  
+      }
+    }
+  }
+  .benefits{
+    &__item{
+      margin: 0 0 35px 0;
+      width: 100%;
+    }
+    &__text{
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .top-slider{
+    &__title{
+      font-size: 43px;
+      line-height: 47px;
+      margin-bottom: 15px;
+    }
+    &__content{
+      padding: 100px 0;
+    }
   }
 }
