@@ -101,11 +101,16 @@
   .user-nav{
     margin-left: auto;
   }
+  .header{
+    .menu{
+      margin: 0;
+    }
+  }
   .menu{
     position: absolute;
-    display: block;
+    left: 0;
+    right: 0;
     top: 125px;
-    width: 98%;
     z-index: 6;
     &__list{
       transition: all .5s;
@@ -186,15 +191,9 @@
 }
 
 @media (max-width: 880px) {
-  .menu {
-    width: 97%;
-  }
 }
 
 @media (max-width: 740px) {
-  .menu{
-    width: 96%;
-  }
 }
 
 @media (max-width: 595px) {
@@ -214,9 +213,6 @@
 @media (max-width: 400px){
   .user-nav{
     justify-content: space-between; 
-  }
-  .menu{
-    width: 94%;
   }
 }
 

@@ -22,62 +22,7 @@
 
 
 
-.modal{
-  padding: 110px 0 120px;
-  &__form{
-    max-width: 470px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  &__label{
-    font-size: 14px;
-    line-height: 36px;
-    color: $text;
-  }
-  &__input{
-    display: block;
-    width: 100%;
-    height: 55px;
-    border: 2px solid #f6f6f6;
-    margin-bottom: 35px;
-    padding: 0 15px;
-  }
-  &__btn{
-    width: 100%;
-    padding: 20px 0;
-    border: none;
-    background-color: $accent-bg;
-    color: #fff;
-    @extend %rubik-500;
-    line-height: 30px;
-  }
-  &__error{
-    padding: 30px 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid #f6f6f6;
-  }
-  &__variable{
-    text-align: center;
-    padding-top: 30px;
-  }
-  &__text{
-    font-size: 14px;
-    line-height: 24px;
-    color: $title;
-    margin-bottom: 20px;
-  }
-  &__link{
-    width: 100%;
-    display: block;
-    background-color: transparent;
-    border: 2px solid $accent-bg;
-    line-height: 30px;
-    color: $title;
-    @extend %rubik-500;
-    padding: 20px 0;
-  }
-}
+
 
 .partners-section{
   background-color: $default-accent-bg;
@@ -360,6 +305,9 @@
     display: flex;
     justify-content: space-between;
   }
+  .catalog__filter-btn {
+    display: none;
+  }
 }
 
 .filter{
@@ -513,7 +461,7 @@
   max-width: 970px;
   width: 100%;
   text-align: left;
-  height: 380px;
+  min-height: 380px;
   margin-bottom: 40px;
   padding: 0;
   box-shadow: none;
@@ -598,7 +546,7 @@
     height: 50px;
     text-align: center;
     background-color: transparent;
-    border: 1px solid $accent-bg;
+    border: 1px solid $accent-bg; 
   }
   &__item--active{
     background-color: $accent-bg;
@@ -632,7 +580,7 @@
   &__title{
     color: #333;
     font-size: 40px;
-    line-height: 26px;
+    line-height: 40px;
     margin-bottom: 20px;
   }
   &__star{
@@ -859,15 +807,21 @@
     padding: 20px 26px;
     color: #fff;
     background-color: $accent-bg;
-    display: inline-flex;
+    display: inline-flex; 
   }
   .articles-top__info-link + .articles-top__info-link{
     margin-left: 20px;
   }
+  .articles-top__info-link{
+    display: flex;
+    img{
+      margin-right: 8px;
+    }
+  }
   &-item__title{
     margin-top: 43px;
     font-size: 36px;
-    line-height: 26px;
+    line-height: 40px;
     color: #333;
   }
   &-item__text{
@@ -963,7 +917,7 @@
 .blog-one__text{
   h3{
     font-size: 36px;
-    line-height: 26px;
+    line-height: 36px;
     color: #333;
     margin: 40px 0 30px;
     display: block;
@@ -1058,6 +1012,10 @@
     margin-left: 30px;
   }
   &-social{
+    display: flex;
+    align-items: center;
+  }
+  &-social__box{
     display: flex;
     align-items: center;
   }
@@ -1260,7 +1218,7 @@
     text-align: center;
     padding: 70px 55px;
     width: 370px;
-    height: 380px;
+    min-height: 380px;
     transition: all .5s;
     &:hover{
       border: 1px solid $accent-bg;
@@ -1302,6 +1260,7 @@
   &__box{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
   }
   &__form{
     width: 620px;

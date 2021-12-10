@@ -1,0 +1,45 @@
+.breadcrumbs {
+  background-color: $main-bg;
+  padding: 35px 0;
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 24px;
+    @extend %rubik-400;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding-right: 20px;
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222933;
+    opacity: .6;
+
+    &::before {
+      content: "/";
+      position: absolute;
+      right: 7px;
+      top: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

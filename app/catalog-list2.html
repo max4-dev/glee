@@ -6,18 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="css/catalog-list2.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
+    <header class="header">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
         </a>
+        <button class="menu__btn menu__btn--active">
+          <span></span>
+        </button>
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu__list menu__list--active">
             <li class="menu__list-item">
               <a class="menu__list-link" href="#">
                 Home +
@@ -73,11 +77,11 @@
   </header>
 
   <main class="main">
-    <section class="breadcrumbs">
+        <section class="breadcrumbs">
       <div class="container-s">
         <div class="breadcrumbs__inner">
           <h2 class="breadcrumbs__title">
-            Product list 1
+            Log in
           </h2>
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -87,7 +91,7 @@
             </li>
             <li class="breadcrumbs__item">
               <span class="breadcrumbs__link">
-                Product list 1
+                Log in
               </span>
             </li>
           </ul>
@@ -97,6 +101,9 @@
     <section class="catalog">
       <div class="container-s">
         <div class="catalog__inner">
+          <button class="catalog__filter-btn">
+            <img src="images/icons/filter.svg" alt="filter">
+          </button>
           <div class="catalog__filter filter">
             <div class="filter-item filter-category">
               <h3 class="filter-title">
@@ -746,7 +753,7 @@
             </a>
           </div>
           <div class="footer-top__item">
-            <h6 class="footer-top__title">Services</h6>
+            <h6 class="footer-top__title footer-top__title-dropbown">Services</h6>
             <ul class="footer-top__list">
               <li class="footer-top__list-item">
                 <a class="footer-top__links" href="#">
@@ -776,7 +783,7 @@
             </ul>
           </div>
           <div class="footer-top__item">
-            <h6 class="footer-top__title">Account</h6>
+            <h6 class="footer-top__title footer-top__title-dropbown">Account</h6>
             <ul class="footer-top__list">
               <li class="footer-top__list-item">
                 <a class="footer-top__links" href="#">

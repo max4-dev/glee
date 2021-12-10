@@ -1,0 +1,406 @@
+@media (max-width: 1200px) {
+  .achievements{
+    &__img{
+      width: 40%;
+      margin-right: 30px;
+    }
+  }
+  .filter{
+    position: absolute;
+    z-index: 100;
+    padding: 0 15px;
+    position: absolute;
+    transform: translateX(-300%);
+    transition: all .5s;
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    right: 0;
+    left: 0;
+    &.filter--active{
+      transform: translateX(0);
+    }
+  }
+  .catalog-content{
+    width: 100%;
+  }
+  .catalog {
+    &__inner{
+      .catalog__filter-btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: $main-bg;
+        position: fixed;
+        bottom: 60px;
+        right: 5px;
+        border: none;
+        z-index: 101;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+      }
+    }
+  }
+  .blog__inner{
+    flex-direction: column;
+  }
+  .blog__content{
+    margin: 0;
+  }
+  .blog__aside{
+    width: 100%;
+    order: -1;
+    .filter{
+      &-category,
+      &-recent{
+        display: none;
+      }
+      &-item{
+        display: none;
+        width: 100%;
+      }
+      &-search{
+        display: block;
+      }
+      &-search__input{
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .team{
+    &__inner{
+      display: block;
+    }
+    &__content{
+      max-width: 100%;
+      margin-bottom: 60px;
+    }
+  }
+  .contact{
+    &__box{
+      display: block;
+    }
+    #map{
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    &__items{
+      flex-wrap: wrap;
+      margin-bottom: 100px;
+    }
+    &__item{
+      margin: 0 auto 20px;
+    }
+  }
+  .contact__form{
+    width: 100%;
+    margin-right: 0;
+    &-input__box{
+      display: block;
+    }
+    &-input{
+      width: 100%;
+      margin-bottom: 20px;
+      display: block;
+    }
+    &-input--name,
+    &-input--email{
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .slide{
+    &-thumb{
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .achievements {
+    &__img {
+      display: none;
+    }
+    &__content{
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+  .achievements__benefits{
+    &-item{
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .product-one{
+    &__inner{
+      display: block;
+    }
+    &__slide{
+      margin-right: 0;
+      margin: 0 auto;
+      width: 100%;
+    }
+    &__text{
+      width: 100%;
+    }
+    &__content{
+      width: 100%;
+    }
+  }
+  .slide{
+    &-big{
+      margin: 0 auto;
+    }
+  }
+  .product-tabs{
+    &__top{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__link{
+      margin-bottom: 20px;
+    }
+    .product-tabs__link+.product-tabs__link {
+      margin-left: 0;
+    }
+  }
+  .blog{
+    &-item__img{
+      min-width: 100%;
+    }
+    &-item{
+      width: 100%;
+    }
+    &__content{
+      width: 100%;
+    }
+  }
+  .blog-one{
+    &__form-input__box{
+      display: block;
+    }
+    &__form-input{
+      width: 100%;
+    }
+    &__form-name{
+      display: block;
+      margin-bottom: 20px;
+    }
+    &__form-email{
+      display: block;
+    }
+  }
+  .comments{
+    &__item-img{
+      display: none;
+    }
+    &__item--answer{
+      margin-left: 0;
+      padding-left: 40px;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .team {
+    &__items {
+      grid-template-columns: 1fr;
+    }
+  }
+  .catalog{
+    .products {
+      &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+  .catalog{
+    .products{
+      &__content.products__content--line{
+        display: block;
+      }
+      &__item.products__item--line {
+        display: block;
+        height: auto;
+        .products__img-box{
+          margin-bottom: 30px;
+        }
+        .product__content{
+          padding: 0;
+        }
+        .products__content-title{
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .benefits-info{
+    padding: 60px 0 40px;
+    &__items {
+      flex-wrap: wrap
+    }
+    &__item{
+      margin: 0 20px 20px;
+    }
+  }
+}
+
+@media (max-width: 595px) {
+  .achievements{
+    padding: 60px 0;
+  }
+  .achievements__benefits {
+    display: block;
+  }
+  .contact{
+    padding: 60px 0 0 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .relates{
+    &__title{
+      padding-bottom: 55px;
+    }
+    &__prev-btn{
+      left: 0;
+    }
+  }
+  .catalog {
+    .products {
+      &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+  .blog-one{
+    &__author-link{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .slide{
+    &-big{
+      width: 100%;
+    }
+  }
+  .product-one{
+    padding: 60px 0 50px;
+    &__input{
+      display: block;
+      margin: 0 0 10px 0;
+    }
+    &__btn {
+      padding: 11px 37px;
+    }
+  }
+  .articles{
+    padding: 30px 0 40px;
+  }
+  .blog {
+    &-item__info-box {
+      flex-direction: column;
+      width: 100%;
+    }
+    &-item__img{
+      height: 350px;
+    }
+    .articles-top__info-link+.articles-top__info-link {
+      margin-left: 0;
+    }
+  }
+  .blog-one{
+    &__author-tag__link-box{
+      display: block;
+      margin-left: 0;
+    }
+    &__author-social {
+      display: block;
+    }
+    &__author-social__link{
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .team{
+    padding: 60px 0;
+    &__items{
+      grid-gap: 50px;
+    }
+    &__item-info{
+      max-width: 100%;
+      bottom: -26px;
+    }
+  }
+  .conditions{
+    padding-top: 60px;
+  }
+  .contact{
+    padding: 60px 0 0 0;
+    &__title{
+      margin-bottom: 30px;
+    }
+    &__items{
+      display: block;
+      margin-bottom: 50px;
+    }
+    &__item{
+      width: 100%;
+    }
+  }
+  .pagination{
+    &__next{
+      display: none;
+    }
+  }
+  .blog{
+    padding: 60px 0;
+  }
+  .blog-one__text{
+    blockquote{
+      padding: 25px 15px;
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  .achievements__content{
+    padding: 60px 0 0;
+  }
+  .achievements__years{
+    display: block;
+    text-align: center;
+    &text-box{
+      margin-top: 60px;
+    }
+  }
+  .team {
+    &__social {
+      flex-direction: column;
+    }
+    &__link+.team__link {
+      margin-left: 0;
+      margin-top: 5px;
+    }
+  }
+}
