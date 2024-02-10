@@ -1,0 +1,20 @@
+.video {
+  background-image: url('../images/video-bg.jpg');
+  @extend %img-bg;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 880px) {
+  .video{
+    height: 400px;
+  }
+}
+
+@media (max-width: 440px) {
+  .video {
+    height: 300px;
+  }
+}

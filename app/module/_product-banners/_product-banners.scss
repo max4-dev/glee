@@ -1,0 +1,102 @@
+.product-banners {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background-color: $default-accent-bg;
+    min-height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px 10px 130px;
+    max-width: 830px;
+    width: 100%;
+  }
+
+  &__img {
+    margin-top: -170px;
+  }
+
+  &__content {
+    margin-left: 50px;
+    padding-right: 15px;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    @extend %dms-700;
+    color: $title;
+    margin-bottom: 25px;
+    max-width: 260px;
+  }
+
+  &__text {
+    max-width: 380px;
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: $text;
+    background-color: transparent;
+    padding: 20px 100px 20px 25px;
+    font-size: 12px;
+    line-height: 15px;
+    position: relative;
+    border: 1px solid #b3b7b5;
+    border-radius: 5px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 9px;
+      right: 15px;
+      top: 23px;
+      background-image: url('../images/green-arrow.png');
+    }
+  }
+}
+
+@media (max-width: 1689px) {
+  .product-banners{
+    &__inner{
+      justify-content: center;
+    }
+    &__item{
+      max-width: 100%;
+      padding: 0;
+    }
+    &__item-first{
+      margin-bottom: 110px;
+    }
+    &__content{
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .product-banners{
+    &__img{
+      display: none;
+    }
+    &__item-first{
+      margin-bottom: 40px;
+    }
+    &__item{
+      display: block;
+      min-height: auto;
+      padding: 40px 0; 
+    }
+    &__content{
+      margin-left: 15px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+  }
+}

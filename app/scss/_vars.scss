@@ -1,0 +1,83 @@
+$default-bg: #fcd7b6;
+$default-accent-bg: #fef7f0;
+$main-bg: #edf1f4;
+$accent-bg: #a3bbc8;
+$side-bg: #dae4e9;
+
+$title:#243f4d;
+$small-title: #1f2044;
+$black-title: #191919;
+$light-title: #8b8b8b;
+$text: #436372;
+$accent-text: #7b7b7b;
+$brown-title: #414141;
+$brown-text: #585858;
+
+%rubik-400{
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500{
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-700{
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%dms-400{
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dms-500{
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dms-700{
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%btn{
+  padding: 20px 100px 20px 25px;
+  background-color: $accent-bg;
+  color: #fff;
+  font-size: 15px;
+  line-height: 12px;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 9px;
+    right: 15px;
+    top: 23px;
+    background-image: url('../images/arrow.png');
+  }
+}
+
+%img-bg{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+%checkbox-hidden{
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0)
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
